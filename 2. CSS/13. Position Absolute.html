@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+</head>
+<style>
+    .Container {
+        width: 1000px;
+        height: auto;
+        border: 2px solid black;
+    }
+    .one{
+        width: 1000px;
+        height: 200px;
+        background-color: rgb(190, 39, 39);
+    }
+    .two{
+        width: 1000px;
+        height: 250px;
+        background-color: rgb(46, 204, 209);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .three{
+        width: 1000px;
+        height: 200px;
+        background-color: rgb(16, 169, 219);
+    }
+</style>
+<body>
+    <div class="Container">
+        <div class="one">ONE</div>
+        <div class="two">TWO</div>
+        <div class="three">THREE</div>
+    </div>
+</body>
+</html>

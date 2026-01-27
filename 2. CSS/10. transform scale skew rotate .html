@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* we need to give transition property to the main class
+    and then in the hover we can give the transform property */
+    .content {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(64, 131, 153);
+        transition: all 2s;
+    }
+    .content:hover {
+        transform: rotate(180deg);
+        border-radius: 0px 30px;
+        background-color: blueviolet;
+    }
+    .IIMG {
+        width: 100px;
+        height: 100px;
+        transition: transform 2s;
+    }
+    .IIMG:hover {
+        transform: scale(0.5);
+    }
+    .IIMG1 {
+        width: 100px;
+        height: 100px;
+        transition: transform 2s;
+    }
+    .IIMG1:hover {
+        transform: scale(1.5);
+    }
+    
+    .content1 {
+        width: 250px;
+        height: 200px;
+        border: 5px solid black;
+        overflow: hidden; /* to hide the extra part of the image */
+    }
+    .img3 {
+        width: 300px;
+        height: 200px;
+        transition: transform 2s;
+    }
+    .img3:hover {
+        transform: scale(1.2);
+    }
+
+    .skew {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(64, 131, 153);
+        transition: all 2s;
+    }
+    .skew:hover {
+        transform: skew(30deg);
+    }
+
+    .ROTATE {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(64, 131, 153);
+        overflow: hidden;
+    }
+    .ROTATEIMG {
+        width: 100%;
+        height: 100%;
+        transition: transform 2s;
+    }
+    .ROTATEIMG:hover {
+        transform: rotateX(180deg); /* it will rotate in x axis */
+        transform: rotateY(180deg); /*it will rotate in y axis */
+        transform: rotateZ(180deg); /* it will rotate in z axis */
+    }
+    .IMG5{
+        width: 300px;
+        height: 200px;
+        transition: transform 2s
+    }
+    .scale{
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+    }
+    .IMG5:hover {
+        transform: scale(1.2);  /* it will scale in both x and y axis */
+        transform: scaleX(1.5); /* it will scale in x axis */
+        transform: scaleY(1.5); /* it will scale in y axis */
+    }
+</style>
+<body>
+    ROTATE 
+    <div class="content"></div>
+    <br><br>
+    SCALE
+    <div class="img">
+        <img src="IMAGES/EYE IMAGE.jpg" alt="" class="IIMG">
+        <img src="IMAGES/Tufa_towers_in_Mono_Lake-1000px.jpeg" alt="" class="IIMG1" margin-left="200px">
+    </div>
+
+    IMAGE ZOOM IN ZOOM OUT
+    <div class="content1">
+        <img src="IMAGES/BACKGROUND.jpg" alt="" class="img3">    
+    </div>
+
+    SKEW
+    <div class="skew">
+
+    </div>
+
+    <br>
+    rotate,rotateX,rotateY,rotateZ 
+    <div class="ROTATE"> 
+        <img src="IMAGES/BACKGROUND.jpg" alt="" class="ROTATEIMG">
+    </div>
+
+    scale,scaleX,scaleY
+    <div class="scale">
+        <img src="IMAGES/EYE IMAGE.jpg" alt="" class="IMG5">
+    </div>
+</body>
+</html>
