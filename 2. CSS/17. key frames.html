@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrame</title>
+    <style>
+        @keyframes changing {
+            0% {left:0px; top:0px; background-color: royalblue;}
+            25% {left:1000px; top:0px; background-color: royalblue}
+            50% {left:1000px; top: 300px; background-color: green;}
+            75% {top: 0300px; left: 0px; background-color: yellow;}
+            100% {left:0px; top:0px; background-color: royalblue;}
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: changing 2s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        .one:hover{
+            animation-play-state: paused;
+            background-color: rgb(201, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

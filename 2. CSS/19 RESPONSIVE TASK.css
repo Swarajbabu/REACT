@@ -1,0 +1,94 @@
+.content {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.banner {
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(223, 30, 30);
+}
+
+.banner img {
+    width: 1000px;
+    height: 300px;
+}
+
+.one {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(7, 58, 75);
+    float: left;
+}
+
+.two {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(12, 173, 12);
+    float: left;
+}
+
+@media screen and (max-width: 999px) {
+    .content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        background-color: rgb(223, 30, 30);
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .one {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(7, 58, 75);
+        float: left;
+    }
+
+    .two {
+        width: 70%;
+        height: 400px;
+        background-color: rgb(12, 173, 12);
+        float: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        background-color: rgb(223, 30, 30);
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .one {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(7, 58, 75);
+    }
+
+    .two {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(12, 173, 12);
+    }
+}

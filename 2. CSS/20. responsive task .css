@@ -1,0 +1,134 @@
+.content {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.img {
+    width: 1000px;
+    height: 200px;
+}
+
+.img img {
+    width: 1000px;
+    height: 200px;
+}
+
+.one {
+    width: 250px;
+    height: 350px;
+    background-color: aqua;
+    float: left;
+}
+
+.two {
+    width: 500px;
+    height: 350px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.three {
+    width: 250px;
+    height: 350px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.foot {
+    clear: both;
+    width: 1000px;
+    height: 100px;
+    background-color: lightpink;
+}
+
+@media screen and (max-width: 999px) {
+    .content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .one {
+        width: 50%;
+        height: 350px;
+        background-color: aqua;
+        float: left;
+    }
+
+    .two {
+        width: 50%;
+        height: 350px;
+        background-color: blueviolet;
+        float: left;
+    }
+
+    .three {
+        width: 100%;
+        height: 200px;
+        background-color: lightgreen;
+        clear: both;
+    }
+
+    .foot {
+        clear: both;
+        width: 100%;
+        height: 100px;
+        background-color: lightpink;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .one {
+        width: 100%;
+        height: 350px;
+        background-color: aqua;
+
+    }
+
+    .two {
+        width: 100%;
+        height: 350px;
+        background-color: blueviolet;
+    }
+
+    .three {
+        width: 100%;
+        height: 350px;
+        background-color: lightgreen;
+        clear: both;
+    }
+
+    .foot {
+        clear: both;
+        width: 100%;
+        height: 100px;
+        background-color: lightpink;
+    }
+}
