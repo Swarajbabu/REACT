@@ -1,0 +1,22 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.container{
+    background:linear-gradient(135deg, #8a2be2,#4169e1);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+.content{
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+}
+.logo{
+    width: 200px;
+    object-fit: contain;
+}
