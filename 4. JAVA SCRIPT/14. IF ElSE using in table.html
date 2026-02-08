@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table border="1px">
+    <tr>
+        <td>Date</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Eligibility</td>
+    </tr>
+    <tr>
+        <td id = "DATE"></td>
+        <td id = "NAME"></td>
+        <td id = "AGE"></td>
+        <td id = "ELB"></td>
+    </tr>
+</table>
+
+<script>
+    let obj = new Date();2
+    let name = prompt("Enter Your Name: ")
+    let age = prompt("Enter Your Age: ")
+    
+    document.getElementById("DATE").innerHTML = obj.toDateString();
+    document.getElementById("NAME").innerHTML = name;
+    document.getElementById("AGE").innerHTML = age;
+
+    if(age>=18){
+        document.getElementById("ELB").innerHTML = "YES";
+    }
+    else{
+        document.getElementById("ELB").innerHTML = "NO";
+    }
+</script>
+</body>
+</html>

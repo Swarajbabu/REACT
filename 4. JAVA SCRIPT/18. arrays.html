@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <script>
+        let arr = [1,2,3,4,5,7,6];
+        arr.pop();
+        let students = ["Praveen", "Naresh", "Swaraj", "Mani", "Srikar"];
+        students.splice(2,0,"Vamsi"); //Adding at index 2 without removing any element if insted of 0 we give 1 it will remove that element
+        students.push("LOL");//Adding at last
+
+        //Iterating through array
+        for(let i = 0; i < students.length; i++){
+            document.getElementById('res').textContent += students[i] + "  ----   ";
+        }
+        let sum = 0;
+        for(let i = 0;i < arr.length; i++) sum += arr[i];
+        document.write(sum);
+        console.log(`Sum of the array: ${sum}`);
+        console.log(arr.indexOf(5));
+        arr.sort().reverse();//Sorting in descending order
+        console.log(arr);
+
+        
+        
+    </script>
+</body>
+</html>

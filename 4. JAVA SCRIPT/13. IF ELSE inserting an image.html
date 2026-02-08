@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS</h1>
+    <img id = "result" alt="" width="100px">
+    <script>
+        let marks = prompt("Enter the student marks: ")
+        if(marks<40){
+            document.getElementById("result").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKq2vhwDSHtPaToIkaF_6PmHup3uDuBVcunA&s"
+        }
+        else{
+            document.getElementById("result").src="https://upload.wikimedia.org/wikipedia/commons/8/85/Smiley.svg"
+        }
+    </script>
+</body>
+</html>

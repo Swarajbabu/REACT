@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #HI{
+        color: red;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 id="HI">GOOD</h1>
+    <script>
+        let obj = new Date();
+        if(obj.getHours()<=12){
+            document.getElementById('HI').innerHTML="GOOD MORNING";
+        }
+        else if(obj.getHours()>12 && obj.getHours()<16){
+            document.getElementById('HI').innerHTML="GOOD AFTERNOON";
+        }
+        else{
+            document.getElementById('HI').innerHTML="GOOD NIGHT";
+        }
+    </script>
+</body>
+</html>

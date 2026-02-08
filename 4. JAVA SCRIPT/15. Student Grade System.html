@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="res">The result: </h1>
+    <script>
+        let marks = window.prompt("Enter your marks: ");
+        if (marks >= 90) {
+            document.getElementById('res').textContent += "O Grade";
+        }
+        else if (marks >= 80) {
+            document.getElementById('res').textContent += "A+ Grade";
+        }
+        else if (marks >= 70) {
+            document.getElementById('res').textContent += "A Grade";
+        }
+        else if (marks >= 60) {
+            document.getElementById('res').textContent += "B Grade";
+        }
+        else if (marks >= 50) {
+            document.getElementById('res').textContent += "C Grade";
+        }
+        else if (marks >= 40) {
+            document.getElementById('res').textContent += "D Grade";
+        }
+        else {
+            document.getElementById('res').textContent += "F";
+        }
+    </script>
+</body>
+
+</html>

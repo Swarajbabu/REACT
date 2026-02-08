@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            height: 100vh;
+        }
+        .card {
+            background-color: white;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+        #month{
+            background-color: rgb(228, 73, 73);
+            margin: 0px;
+            border-radius: 30px 30px 0 0;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+        }
+        #day{
+            font-size: 25px;
+            margin: 20px;
+        }
+        #date{
+            font-size: 70px;
+            margin: 0;
+        }
+        #year{
+            font-size: 20px;
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1 id="month"></h1>
+        <h2 id="day">day</h2>
+        <h1 id="date">1</h1>
+        <h2 id="year">2000</h2>
+    </div>
+    <script>
+        let date = new Date();
+        let month = date.getMonth();
+        switch (month) {
+            case 0:
+                document.getElementById('month').innerText = "January";
+                break;
+            case 1:
+                document.getElementById('month').innerText = "Febuary";
+                break;
+            case 2:
+                document.getElementById('month').innerText = "March";
+                break;
+            case 3:
+                document.getElementById('month').innerText = "April";
+                break;
+            case 4:
+                document.getElementById('month').innerText = "May";
+                break;
+            case 5:
+                document.getElementById('month').innerText = "June";
+                break;
+            case 6:
+                document.getElementById('month').innerText = "July";
+                break;
+            case 7:
+                document.getElementById('month').innerText = "August";
+                break;
+            case 8:
+                document.getElementById('month').innerText = "September";
+                break;
+            case 9:
+                document.getElementById('month').innerText = "October";
+                break;
+            case 10:
+                document.getElementById('month').innerText = "November";
+                break;
+            case 11:
+                document.getElementById('month').innerText = "December";
+                break;
+        }
+        let day = date.getDate();
+        day = day % 7;
+        switch (day) {
+            case 1:
+                document.getElementById('day').innerText = "Sunday";
+                break;
+            case 2:
+                document.getElementById('day').innerText = "Monday";
+                break;
+            case 3:
+                document.getElementById('day').innerText = "Tuesday";
+                break;
+            case 4:
+                document.getElementById('day').innerText = "Wednesday";
+                break;
+            case 5:
+                document.getElementById('day').innerText = "Thursday";
+                break;
+            case 6:
+                document.getElementById('day').innerText = "Friday";
+                break;
+            case 7:
+                document.getElementById('day').innerText = "Saturday";
+                break;
+        }
+        document.getElementById('date').innerText = day;
+        let year = date.getFullYear();
+        document.getElementById('year').innerText = year
+    </script>
+</body>
+
+</html>

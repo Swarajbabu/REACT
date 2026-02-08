@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin: auto;
+    }
+</style>
 <body>
     <h1>JS</h1>
+    <table border="1px">
+        <th>Dollars$</th>
+        <th>Rupees</th>
+
+        <script>
+            let dol = prompt("Enter the how many DOL")
+            let ind = Number(dol) * 90.5;
+            document.write("<tr>" + "<td>" + dol + "</td>")
+            document.write("<td>" + ind + "</td>" + "</tr>")
+        </script>
+    </table>
+
+    <br><br><br><br>
+
+    <table border="1px">
+        <tr>
+            <td>Dollars</td>
+            <td>Rupees</td>
+        </tr>
+        <tr>
+            <td id = "DOL"></td>
+            <td id = "IND"></td>
+        </tr>
+    </table>
+
     <script>
-        let  = prompt("Enter Your name");
-        let  = prompt("Enter your place");
+        let s = prompt("Enter Dollar Value")
+        document.getElementById('DOL').innerHTML = s;
+        document.getElementById('IND').innerText= s*90.13;
     </script>
 </body>
+
 </html>

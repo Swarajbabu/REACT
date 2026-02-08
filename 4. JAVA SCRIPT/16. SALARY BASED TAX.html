@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <table border="1px" align="center">
+        <tr>
+            <th>Salary</th>
+            <th>Tax amount</th>
+            <th>YOU WILL GET Salary</th>
+        </tr>
+        <tr>
+            <td id="salary"></td>
+            <td id="tax"></td>
+            <td id="finalAmount"></td>
+        </tr>
+    </table>
+    <script>
+        let salary = window.prompt("Enter the salary: ");
+        document.getElementById('salary').innerText = salary;
+        
+        let tax = 0;
+        if (salary >= 40000 && salary <= 50000) {
+            tax = salary * 0.05;
+        }
+        else if (salary > 50000 && salary <= 60000) {
+            tax = salary * 0.08;
+        }
+        else if (salary > 60000) {
+            tax = salary * 0.1;
+
+        }
+        document.getElementById('tax').innerText = tax;
+        document.getElementById('finalAmount').innerText = salary - tax;
+    </script>
+</body>
+
+</html>

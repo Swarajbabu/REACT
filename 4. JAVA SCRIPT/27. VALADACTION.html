@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <label>Name: </label>
+        <input type="text" placeholder="Enter your name: " id="name"><br><br>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your Password: "><br><br>
+        <button onclick="Hello()">Click Here</button>
+    </div>
+    <h2 id="hh2"></h2>
+    <script>
+        function Hello(){
+            let password = document.getElementById('password').value;
+            let name = document.getElementById('name').value;
+            if(name === "lpu" && password === "mern") document.getElementById('hh2').innerText = "Login Sucessfully";
+            else document.getElementById('hh2').innerText = "Login Failed";
+        }
+       
+    </script>
+</body>
+</html>
