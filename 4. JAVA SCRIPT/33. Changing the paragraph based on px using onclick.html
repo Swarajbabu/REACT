@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quae distinctio dolores saepe
+        debitis eum quos voluptates explicabo culpa a ducimus quibusdam perspiciatis fuga, fugit aspernatur maxime
+        cupiditate? Aspernatur illo, dolorem maiores nobis cumque dolores repellat, optio laboriosam fuga, eos qui.
+        Fugiat, beatae sed quidem temporibus dolore voluptas accusantium repellat.</h2>
+    <select id="px" onchange="Demo()">
+        <option>Select</option>
+        <option>16px</option>
+        <option>32px</option>
+        <option>45px</option>
+        <option>60px</option>
+    </select>
+    <script>
+        function Demo() {
+            let x = document.getElementById("px").value;
+            document.getElementById("txt").style.fontSize = x;
+        }
+    </script>
+</body>
+
+</html>

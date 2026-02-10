@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn">CLICK</button>
+
+    <br><h2 id="txt">HI THIS IS THE EVENT HANDLER</h2>
+
+    <button id = "Style">BG-COLOR</button>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.onclick = function(){
+            alert("SUBMITED SUCCESSFULLY")
+        }
+
+        // addEventListener is used to add multiple event handlers to the same element and event type, 
+        // without overwriting existing handlers. It allows you to attach multiple functions to the same event, 
+        // and they will be executed in the order they were added.
+        let b = document.querySelector("#Style")
+        b.addEventListener("click",function(){
+            document.body.style.backgroundColor = "yellow";
+            document.querySelector("#txt").style.color = "red";
+        })
+    </script>
+</body>
+</html>

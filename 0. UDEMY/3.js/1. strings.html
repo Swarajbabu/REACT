@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- trim -->
+    <script>
+        let name = "     Swaraj      ";
+        document.write(name);
+        document.write(name.trim());
+
+        // let pass = prompt("Enter your password")
+        // document.write(pass.trim());
+
+        document.write("<br><br><h2>LOWER AND UPPER CASE</h2>");
+
+        let x = "baBu SwarAj";
+        let y = x.toUpperCase();
+        document.write(y + "<br>");
+        document.write(x.toLowerCase());
+
+        document.write("<br><br><h2>INDEXOF</h2>");
+
+        document.write(x.indexOf("Sw"));
+        document.write(x.indexOf("B"))
+
+        document.write("<br><br><h2>INDEXOF</h2>");
+
+        let str1 = "    babu swaraj   "
+        document.write(str1.trim().toUpperCase())
+
+        document.write("<br><br><h2>Slice</h2>");
+        let str2 = "I LOVE INDIA";
+        document.writeln(str2.slice(5) + "<br>")
+        document.writeln(str2.slice(1, 8) + "<br>")
+        document.write(str2.slice(0, str2.length) + "<br>")
+        document.write(str2.slice(-1))
+
+        document.write("<br><br><h2>Replace</h2>");
+        // document.write(str.slice("LOVE","love") )
+
+        document.write("<br><br><h2>Repert</h2>");
+        document.write(str2.repeat(2))
+    </script>
+</body>
+
+</html>

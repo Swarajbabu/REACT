@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .txt{
+        background-color: black;
+        color: azure;
+        padding: 20px;
+    }
+
+    .txt2{
+        background-color: yellow;
+        color: black;
+        padding: 30px;
+    }
+</style>
+<body>
+    <button type="button" onclick="Demo()">ADD STYLE</button>
+    <button type="button" onclick="Demo1()">ADD STYLE2</button>
+    <script>
+        const Demo = () =>{
+            let x = document.createElement("h3")
+            x.classList.add('txt')
+            x.innerHTML = "ADDING THE TXT";
+            document.body.appendChild(x);
+        }
+
+        const Demo1 = () =>{
+            let y = document.createElement("h3")
+            y.classList.add("txt2")
+            y.innerHTML = "ADDING SOME TXT";
+            document.body.appendChild(y)
+        }
+    </script>
+</body>
+</html>

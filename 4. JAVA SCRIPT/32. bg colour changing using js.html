@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+    <h2 id="txt">HELLO</h2>
+    <select id = "clo" onchange="Demo()">
+        <option>Select</option>
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+        <option>orange</option>
+    </select>
+    <script>
+        function Demo(){
+            let x = document.getElementById("clo").value;
+            // document.getElementById("bg").style.background = x;
+            document.getElementById("txt").style.color = x;
+        }
+    </script>
+</body>
+</html>

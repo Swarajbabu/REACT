@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFocus</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the data" id="txt1" onfocus="Focus()" onblur="Blur()"><br>
+
+    <script>
+        function Focus(){
+            // document.getElementById("message").innerText = "Enter your name";
+            document.getElementById('txt1').style.background = "red";
+        }
+        function Blur(){
+            let value = document.getElementById('txt1').value;
+            if(value === "") document.getElementById('txt1').style.background = "blue"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            let x = "JAVA"
+            let y = "JAVA"
+            if(x==y){
+                resolve()
+            }
+            else{
+                reject()
+            }
+        })
+        promise.then(()=>{
+            console.log("Sucess");
+        })
+        promise.catch(()=>{
+            console.log("Error");
+        })
+        promise.finally(()=>{
+            console.log("Completed");x
+        })
+        
+
+    </script>
+</body>
+
+</html>

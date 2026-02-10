@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="course" onchange="Demo()">
+        <option >MernStack</option>
+        <option >JavaFullstack</option>
+        <option >Python FullStack</option>
+        <option >React</option>
+    </select>
+    <h1 id = "result"></h1>
+    <script>
+        function Demo() {
+            let x = document.getElementById("course").value;
+            document.getElementById("result").innerHTML="You Have seected: <span id='xvalue'>"+ x    +"</span> Course"; 
+            document.getElementById("xvalue").style.color="blue";
+        }
+    </script>
+
+</body>
+
+</html>
