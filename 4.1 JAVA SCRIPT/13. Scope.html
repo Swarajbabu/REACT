@@ -13,16 +13,32 @@
             console.log(x)
         }
         function Demo(){
+            let x = 10
             return x;
         }
         console.log(Demo())
 
+        
         // function decleration
         function Demo1(){
             let y = 200;
+            
             console.log(y)
         }
-        console.log(y)
+        Demo1()
+        // console.log(y)    // it wont work because y is in function
+
+
+        //block declerction
+        {
+            // let z = 500       //it wont work out side of the block
+            var z = 500          //it will work out side of the block
+            // const z = 500     //it wont work out side of the block
+            console.log(z)
+        }
+        console.log(z)
+
+
     </script>
 </body>
 </html>

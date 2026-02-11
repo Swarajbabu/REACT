@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <button id="btn">ADD NOTE <i class="fa-solid fa-plus"></i></button>
+        <!-- <div class="note">
+            <div class="tool">
+                <i class="fa-regular fa-floppy-disk"></i>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <textarea name="" id=""></textarea>
+        </div> -->
+    </div>
+
+    <script>
+        let main = document.querySelector("#main")
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click", function () {
+            addNode();
+        })
+
+        function addNode() {
+            const note = document.createElement("div")
+            note.classList.add('note')
+            note.innerHTML = 
+            `<div class="tool">
+                <i class="fa-regular fa-floppy-disk"></i>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <textarea name="" id=""></textarea>`
+            main.appendChild(note)
+
+        }
+    </script>
+</body>
+
+</html>

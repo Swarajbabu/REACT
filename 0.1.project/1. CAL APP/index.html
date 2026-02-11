@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: rgb(229, 229, 245);
+    }
+
+    .container {
+        border: 2px solid black;
+        padding: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        min-height: 450px;
+        width: 400px;
+        text-align: center;
+        border-radius: 25px;
+        background-color: rgb(235, 232, 229);
+    }
+
+    .screen input {
+        width: 350px;
+        height: 60px;
+        margin: 20px;
+        border-radius: 10px;
+        text-align: right;
+        font-size: 30px;
+    }
+
+    .num {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 15px;
+        width: 330px;
+        height: 250px;
+        margin: auto;
+        /* border: 1px solid black; */
+        /* border-radius: 15px; */
+    }
+
+    .num input {
+        width: 70px;
+        height: 50px;
+        font-size: 20px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .reset {
+        width: 330px;
+        /* border: 1px solid black; */
+        margin: auto;
+        background-color: aliceblue;
+    }
+
+    .reset input {
+        width: 330px;
+        height: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: aliceblue;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="screen">
+                <input type="text" id="screen" readonly>
+            </div>
+
+            <div class="num">
+                <input type="button" value="7" onclick="Demo(7)">
+                <input type="button" value="8" onclick="Demo(8)">
+                <input type="button" value="9" onclick="Demo(9)">
+                <input type="button" value="/" onclick="Demo('/')">
+
+                <input type="button" value="4" onclick="Demo(4)">
+                <input type="button" value="5" onclick="Demo(5)">
+                <input type="button" value="6" onclick="Demo(6)">
+                <input type="button" value="*" onclick="Demo('*')">
+
+                <input type="button" value="1" onclick="Demo(1)">
+                <input type="button" value="2" onclick="Demo(2)">
+                <input type="button" value="3" onclick="Demo(3)">
+                <input type="button" value="+" onclick="Demo('+')">
+
+
+                <input type="button" value="." onclick="Demo('.')">
+                <input type="button" value="0" onclick="Demo(0)">
+                <input type="button" value="=" onclick="Result()">
+                <input type="button" value="-" onclick="Demo('-')">
+            </div>
+            <div class="reset">
+                <input type="reset">
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        const Demo = (num) => {
+            document.getElementById('screen').value += num;
+        }
+        const Result = () => {
+            document.getElementById('screen').value =
+                eval(document.getElementById('screen').value)
+        }
+    </script>
+</body>
+
+</html>
