@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3]
+        let min_val = Math.min(...arr)
+        console.log(min_val)
+        
+        let arr2 = [4,5,6]
+        let merg = [...arr,...arr2]
+        console.log(min_val)
+        
+        let person = {
+            name: "Swaraj",
+            password: "Swaraj@2005"
+        }
+        let datacopy = {...person, id: 123,Country: "India"}
+        console.log(datacopy)
+        console.log(datacopy.name)
+    </script>
+</body>
+</html>

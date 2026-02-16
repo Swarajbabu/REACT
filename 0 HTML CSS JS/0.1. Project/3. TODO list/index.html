@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="name">
+            <h2>To-doLIST</h2>
+        </div>
+        <div class="val">
+            <input type="text" placeholder="Add a task" id="data">
+            <button id = "btn">Add Task</button>
+        </div>
+        <!-- <div class="add">
+            <ul class="add2">
+                <li></li>
+                <button>DELET</button>
+            </ul>
+        </div> -->
+    </div>
+
+
+    <script>
+
+
+        let main = document.querySelector(".container")
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click",function(){
+            Demo();
+        })
+
+        const Demo = () => {
+            let userval = document.getElementById("data").value;
+            let x = document.createElement("div")
+            x.classList.add('x')
+            x.innerHTML = 
+            `<div class="add">
+                <ul class="add2">
+                    <li id="del">${userval}</li>
+                    <button class='trash'>DELET</button>
+                </ul>
+            </div> `;
+            main.appendChild(x)
+
+            document.getElementById("data").value = ""
+
+            x.querySelector(".trash").addEventListener("click",function(){
+                
+            })
+        }
+    </script>
+</body>
+
+</html>

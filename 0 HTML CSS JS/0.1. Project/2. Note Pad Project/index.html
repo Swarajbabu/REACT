@@ -35,12 +35,25 @@
             note.classList.add('note')
             note.innerHTML = 
             `<div class="tool">
-                <i class="fa-regular fa-floppy-disk"></i>
-                <i class="fa-solid fa-trash"></i>
+                <i class="save fa-regular fa-floppy-disk"></i>
+                <i class="trash fa-solid fa-trash"></i>
             </div>
             <textarea name="" id=""></textarea>`
             main.appendChild(note)
+            note.querySelector(".trash").addEventListener("click",function(){
+                note.remove()
+            })
 
+            note.querySelector(".save").addEventListener("click",function(){
+                saveNotes()
+            })
+            
+            const saveNotes = () =>{
+                const notes = document.querySelector(".note textarea");
+                console.log(notes)
+                const data = []
+
+            }
         }
     </script>
 </body>

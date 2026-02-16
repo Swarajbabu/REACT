@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: "Swaraj",
+            age: 26,
+            eng: 95,
+            mth: 85,
+            phy: 42,
+            getavg(){
+                let avg=(this.eng+this.mth+this.phy)/3;
+                console.log(`${this.name} got ${avg} of average marks`)
+            }
+        }
+        console.log(student.name)
+        console.log(student.age)
+        student.getavg()
+    </script>
+</body>
+</html>

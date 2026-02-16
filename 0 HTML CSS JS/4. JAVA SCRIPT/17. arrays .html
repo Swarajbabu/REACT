@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = ["Swarj", "Babu", "Praveen", "Naresh"]
+        document.write(students + "<br>")
+
+        students.push("BABU")
+
+        //Adding for item to the last
+        document.write(students + "<br>")
+
+        //delection an element at the last element
+        students.pop()
+        document.write(students + "<br>")
+
+        //adding an element at first
+        students.unshift("Vecha")
+        document.write(students + "<br>")
+
+        //roming the first element
+        students.shift()
+        document.write(students)
+
+
+        //maps
+        arr = ["swaraj", "vecha", "babu"]
+        let val = arr.map((el) => {
+            return el + " HI"
+        })
+        console.log(val)
+
+        arr1 = [10, 20, 30, 40, 50]
+        let result = arr1.map(function (num) {
+            return num * 2;
+        })
+        console.log(result)
+
+        let result1 = arr.map(name => {
+            return name.toUpperCase();
+        })
+        console.log(result1)
+
+        // let person = {
+        //     name: "swaraj",
+        //     age: 19,
+        //     class: "Btech"
+        // }
+        // person.map((el) => {
+        //     console.log(el.name);
+        // })
+
+        //filter
+        let num = [2, 4, 1, 5, 6, 2, 7, 8, 1];
+        let even = num.filter((el) => {
+            return (el % 2 == 0);
+        })
+        console.log(even.sort())
+
+        let person = [
+            { name: "swaraj", marks: 85 },
+            { name: "Sunny", marks: 72},
+            {name: "Jayanth", marks: 99}
+        ];
+        let topper = person.filter((el)=>{
+            return el.marks > 75
+        })
+        console.log(topper)
+
+        //reduse
+        let num1 = [2, 4, 1, 5];
+        let sum = num1.reduce((pre,el)=>{
+            return pre + el
+        })
+        console.log(sum)
+
+        let max_value = num1.reduce((max,el)=>{
+            if(el>max){
+                return el;
+            }
+            else{
+                return max;
+            }
+        })
+        console.log(max_value)
+    </script>
+</body>
+
+</html>
