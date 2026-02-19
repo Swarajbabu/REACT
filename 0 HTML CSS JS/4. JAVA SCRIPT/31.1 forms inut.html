@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEXT AREA</h1>
+    <p id = "change"></p>
+    <p id= "input"></p>
+    <form action="">
+        <input type="text" id="input">
+        <input type="submit">
+    </form>
+
+    <script>
+        let input = document.querySelector("input")
+        
+        //afte clicking the final submit button it will print
+        input.addEventListener("change",function(){
+            let par = document.getElementById("change")
+            par.innerText = input.value
+        })
+        
+        // while we are typing only it will print
+        input.addEventListener("input",function(){
+            let par = document.querySelector("#input")
+            par.innerText = input.value
+        })
+    </script>
+</body>
+</html>

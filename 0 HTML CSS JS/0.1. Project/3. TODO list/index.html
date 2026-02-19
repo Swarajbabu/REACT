@@ -44,7 +44,7 @@
             `<div class="add">
                 <ul class="add2">
                     <li id="del">${userval}</li>
-                    <button class='trash'>DELET</button>
+                    <button class='trash'>TEESEI</button>
                 </ul>
             </div> `;
             main.appendChild(x)
@@ -52,8 +52,8 @@
             document.getElementById("data").value = ""
 
             x.querySelector(".trash").addEventListener("click",function(){
-                
-            })
+                x.remove()
+            })  
         }
     </script>
 </body>
