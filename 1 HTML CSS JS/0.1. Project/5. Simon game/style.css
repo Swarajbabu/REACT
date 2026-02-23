@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+    margin-right: 0;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: #d95980; 
+}
+.yellow{
+    background-color: #f99b45;
+}
+.green{
+    background-color: #7aee5d;
+}
+.purple{
+    background-color: #5c77c9;
+}
+.flash{
+    background: white;
+}
+.useFlash{
+    background: rgb(118, 212, 118);
+}
+.gameexit{
+    background-color: red;
+}

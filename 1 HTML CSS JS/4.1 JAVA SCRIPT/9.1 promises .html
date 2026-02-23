@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function savedata() {
+            return new Promise((resolve, reject) => {
+                let network = Math.floor(Math.random() * 10);
+                if (network > 4) {
+                    resolve("THE FILE IS SAVED")
+                } else {
+                    reject("THE FILE DONT SAVE")
+                }
+            })
+        }
+        savedata()
+            .then((result) => {
+                console.log(result)
+            })
+        .catch((result) => {
+            console.log(result)
+        })
+    </script>
+</body>
+
+</html>
