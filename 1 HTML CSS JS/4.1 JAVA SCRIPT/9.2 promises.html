@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        function savedata(data){
-            return new Promise((resolve,re))
+        function savedata(data) {
+            return new Promise((resolve, reject) => {
+                let netspeed = Math.floor(Math.random() * 10) + 1;
+                if (netspeed > 4) {
+                    resolve("Success: data was saved")
+                }
+                else {
+                    reject("Failure: weak Connection")
+                }
+            });
         }
 
+        savedata("Swaraj")
+            .then(() => {
+                console.log("Data1 saved");
+                savedata("helloWorld")
+            })
+            .then(() => {
+                console.log("data2 was saved");
+                savedata("Babu HELLO")
+            })
+            .then(()=>{
+                console.log("data3 was saved");
+            })
+            .catch(() => {
+                console.log("promise was rejected");
+            });
     </script>
 </body>
+
 </html>
