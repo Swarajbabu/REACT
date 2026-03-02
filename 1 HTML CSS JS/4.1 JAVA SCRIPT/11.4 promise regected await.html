@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="col">Hi this is swaraj</h1>
+    <script>
+        h1 = document.getElementById('col')
+        //If the promis was regicted in any case handling the errors in promis
+        function ColorChange(col, del) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    h1.style.color = col;
+                    console.log("Colour changed to: " + col)
+                    let random = Math.floor(Math.random() * 5) + 1;
+                    if (random > 3) {
+                        resolve()
+                    } else {
+                        reject()
+                    }
+                }, del)
+            })
+        }
+        // By using the try and catch we can handle the error
+        Demo = async () => {
+            try {
+                await ColorChange('red', 1000);
+                await ColorChange('blue', 1000);
+                await ColorChange('green', 1000);
+                await ColorChange('yellow', 1000);
+                await ColorChange('orange', 1000);
+            }
+            catch(err){
+                console.log(err);
+                console.log('promise was regicted')
+            }
+            
+            let num = 10;
+            console.log('New Value is: ' , num + 5);
+        }
+        Demo()
+
+    </script>
+</body>
+
+</html>

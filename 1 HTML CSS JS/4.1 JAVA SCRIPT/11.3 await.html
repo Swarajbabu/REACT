@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="col">Hi this is swaraj</h1>
+    <script>
+        function ColorChange(col,del){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    document.getElementById('col').style.color = col;
+                    console.log("Colour changed")
+                    resolve()
+                },del)
+            })
+        }
+        // without using await the code will not wait for the promise to resolve and all the colors will be changed at the same time after 1 second
+        // by using the await the code will wait for the promise to resolve before going to the next line of code and the colors will be changed one by one after 1 second
+        Demo = async()=>{
+            await ColorChange('red',1000);
+            await ColorChange('blue',1000);
+            await ColorChange('green',1000);
+            await ColorChange('yellow',1000);
+            await ColorChange('orange',1000);
+        }
+        Demo()
+
+    </script>
+</body>
+</html>

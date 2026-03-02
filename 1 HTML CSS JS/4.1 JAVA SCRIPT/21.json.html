@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // JSON to Object
+        // we can acces direct also 
+        const jsonData = `{
+            "id": 1,
+            "name": "Rahul Sharma",
+            "age": 21,
+            "course": "Mechanical Engineering",
+            "cgpa": 8.0
+        }`
+        console.log(JSON.parse(jsonData))
+        
+
+        // Object to JSON String
+        let obj = {
+            name: "Student",
+            marks: 25
+        }
+        console.log(JSON.stringify(obj))
+
+    </script>
+</body>
+
+</html>

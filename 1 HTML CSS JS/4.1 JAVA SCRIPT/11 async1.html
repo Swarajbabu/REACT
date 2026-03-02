@@ -7,6 +7,8 @@
 </head>
 <body>
     <script>
+        //async function always returns a promise and the value is wrapped in a promise  
+        // await can only be used inside an async function
         async function Demo() {
             let y = await "HELLO ASYNC";
             console.log(y);
