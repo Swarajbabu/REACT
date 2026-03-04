@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <h1>RANDOM IMAGES OF DOG</h1>
+    <button>CHANGE</button><br>
+    <img src="" alt="" id="img" width="500px">
+
+    <script>
+        
+        const url2 = "https://dog.ceo/api/breeds/image/random"
+        let btn = document.querySelector("button")
+        let img = document.querySelector("#img")
+        
+        btn.addEventListener("click",async()=>{
+            ImgUrl = await GetImg();
+            img.src = ImgUrl;
+        })
+
+        async function GetImg() {
+            try{
+                let res = await axios.get(url2);
+                // console.log(res.data.message)
+                return res.data.message;
+            }
+            catch(e){
+                console.log("ERROE: "+e)
+            }
+        }
+
+    </script>
+</body>
+
+</html>

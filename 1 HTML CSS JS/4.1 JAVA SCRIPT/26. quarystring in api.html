@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TYPE THE COUNTRY NAME</h1>
+    <input type="text" id="val">
+    <button>GET DATA</button>
+    <ul id = 'list'></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script>
+        url = 'http://universities.hipolabs.com/search?country='
+        // name = 'nepal'
+
+        btn = document.querySelector("button")
+
+        btn.addEventListener("click", async () => {
+            input = document.querySelector("input").value
+            let data = await getcontry(input);
+            show(data);
+        })
+
+        function show(data) {
+            let ul = document.querySelector('#list')
+            list.innerText = "";
+            for(col of data){
+                let li = document.createElement('li');
+                li.innerText = col.name;
+                ul.appendChild(li);
+            }
+        }
+        async function getcontry(input) {
+            try {
+                let res = await axios.get(url + input);
+                return res.data;
+            }
+            catch(e){
+                console.log("ERROR: "+e);
+                return [];
+            }
+        }
+        // getcontry()
+    </script>
+</body>
+
+</html>
