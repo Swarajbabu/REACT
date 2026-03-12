@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "ejs": "^5.0.1",
     "express": "^5.2.1",
-    "figlet": "^1.10.0"
+    "figlet": "^1.10.0",
+    "nodemon": "^3.1.14"
   }
 }
