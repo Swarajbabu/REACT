@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>This Page belongs to @<%= data.name %></h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <h2>
+        Followers: <%= data.followers %> 
+        &nbsp; &nbsp; &nbsp; 
+        Following: <%= data.following %>
+    </h2>
+
+    <% for (let post of data.posts) { %>
+
+        <img class="imgs" src="<%= post.image %>" alt="image">
+        <p>
+            Likes: <%= post.likes %> 
+            &nbsp; &nbsp;&nbsp; 
+            comments: <%= post.comments %>
+        </p>
+
+    <% } %>
+    
+    <!-- // this is how we can include footer in this page -->
+    <%- include("include/footer.ejs") %>
+</body>
+</html>
